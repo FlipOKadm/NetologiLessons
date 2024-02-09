@@ -13,9 +13,7 @@ h2,
 h3 {
   margin: 0;
 }
-#root{
-  width: 100%;
-}
+
 .container {
   display: -webkit-box;
   display: -webkit-flex;
