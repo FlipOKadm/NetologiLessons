@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ee89e1d-f0da-49a7-abf9-9d61460a18d3" name="Changes" comment="deleted files" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="store-func" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="store-class" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;FlipOKadm&quot;,
+      &quot;author&quot;: &quot;FlipOKadm&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FlipOKadm&quot;,
+    &quot;author&quot;: &quot;FlipOKadm&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1750d7b3-c94b-4f7c-b986-f427c9352449" />
+        <option name="url" value="https://github.com/FlipOKadm/NetologiLessons.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2c1nUfety16gEq2TajhgwQoxE2E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ReactCreateComponentLastSelected": "functionDeclarationComponent",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Максим/Desktop/Netologiya/DZ/StoreInternet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\Netologiya\DZ\StoreInternet\StoreFunc\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ee89e1d-f0da-49a7-abf9-9d61460a18d3" name="Changes" comment="" />
+      <created>1707287971199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707287971199</updated>
+      <workItem from="1707287973369" duration="15823000" />
+      <workItem from="1707495637408" duration="15000" />
+      <workItem from="1707495679073" duration="2346000" />
+      <workItem from="1707656484482" duration="977000" />
+    </task>
+    <task id="LOCAL-00001" summary="Start lessons">
+      <option name="closed" value="true" />
+      <created>1707288506580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707288506581</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create function ShopItemFunc and Class CardObject">
+      <option name="closed" value="true" />
+      <created>1707322298015</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707322298015</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added css and image">
+      <option name="closed" value="true" />
+      <created>1707322398319</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707322398319</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added for root width">
+      <option name="closed" value="true" />
+      <created>1707322696007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707322696007</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed trans item">
+      <option name="closed" value="true" />
+      <created>1707322783816</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707322783816</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create ShopItemClass">
+      <option name="closed" value="true" />
+      <created>1707324044474</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707324044474</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create Calendar">
+      <option name="closed" value="true" />
+      <created>1707327410347</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707327410347</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Destructure props">
+      <option name="closed" value="true" />
+      <created>1707327627904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707327627904</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Destructure calendar">
+      <option name="closed" value="true" />
+      <created>1707495881906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707495881906</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Other files for project">
+      <option name="closed" value="true" />
+      <created>1707496450510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707496450510</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix errors">
+      <option name="closed" value="true" />
+      <created>1707497294083</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707497294083</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix errors">
+      <option name="closed" value="true" />
+      <created>1707497410105</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707497410105</updated>
+    </task>
+    <task id="LOCAL-00013" summary="deleted files">
+      <option name="closed" value="true" />
+      <created>1707657365962</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707657365962</updated>
+    </task>
+    <task id="LOCAL-00014" summary="deleted files">
+      <option name="closed" value="true" />
+      <created>1707657398063</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707657398063</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start lessons" />
+    <MESSAGE value="Create function ShopItemFunc and Class CardObject" />
+    <MESSAGE value="Added css and image" />
+    <MESSAGE value="Added for root width" />
+    <MESSAGE value="Changed trans item" />
+    <MESSAGE value="Create ShopItemClass" />
+    <MESSAGE value="Create Calendar" />
+    <MESSAGE value="Destructure props" />
+    <MESSAGE value="Destructure calendar" />
+    <MESSAGE value="Other files for project" />
+    <MESSAGE value="Fix errors" />
+    <MESSAGE value="deleted files" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted files" />
+  </component>
+</project>
