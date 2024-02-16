@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 function IconSwitch({icon, onSwitch}) {
     
    
-        if(icon == "view_module"){
+        if(icon == "view_list"){
            return(
                 <Button className='text-black' variant="link" onClick={onSwitch}>
                     <ViewListIcon/>

@@ -1,7 +1,5 @@
 import * as PropTypes from "prop-types";
-import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
-import {Col} from 'react-bootstrap';
+import {Col, Image, Button} from 'react-bootstrap';
 function ShopItem({name,price,color,img}){
     return(
         <>

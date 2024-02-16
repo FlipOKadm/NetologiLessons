@@ -1,6 +1,5 @@
 import * as PropTypes from "prop-types";
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import {Card, Button} from 'react-bootstrap';
 
 function ShopCard({name,price,color,img}){
     return(
