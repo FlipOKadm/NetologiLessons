@@ -15,8 +15,8 @@ export function CustomNavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-        <CustomLink to="/raiting">Raiting</CustomLink>
-        <CustomLink to="/list">List</CustomLink>
+            <CustomLink to="/raiting">Raiting</CustomLink>
+            <CustomLink to="/listing">Listing</CustomLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
