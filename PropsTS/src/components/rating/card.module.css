@@ -50,12 +50,12 @@
   background-color:#31708f;
   border-radius:2px;
   color:#fff;
-  font-size:.75rem;
+  font-size:.55rem;
   font-weight:600;
   padding:.25rem .5rem;
   position:absolute;
   right:-1rem;
-  top:3rem;
+  top:2rem;
   text-transform:uppercase;
 }
 .item-image {

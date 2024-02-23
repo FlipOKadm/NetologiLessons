@@ -5,8 +5,8 @@ import { ILike } from '../../models/interface';
 
 
 export const Like: FC<ILike> = ({onLike, like}) => (
-    <IconButton aria-label="like" onClick={()=>onLike()} color="primary">
-        {like} <FavoriteIcon />
+    <IconButton aria-label="like" onClick={()=>onLike()} size='small' color="primary">
+        {like} <FavoriteIcon fontSize='small'/>
     </IconButton>
 );
 
