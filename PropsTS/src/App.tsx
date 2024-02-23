@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
-import Rating from "./pages/raiting/Rating"
+import Rating from "./pages/rating/Rating"
 import {Listing} from "./pages/listing/Listing"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,9 +9,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/raiting" element={<Rating />}/>
+          <Route path="/rating" element={<Rating />}/>
           <Route path="/listing" element={<Listing />}/>
-          <Route path="*" element={<Navigate to="/raiting" />} />
+          <Route path="*" element={<Navigate to="/rating" />} />
         </Routes>
       </BrowserRouter>
     </>
