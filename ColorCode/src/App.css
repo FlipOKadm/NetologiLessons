@@ -1,0 +1,29 @@
+html,body,#root,.color{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+.color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    padding: 13px;
+    margin-bottom: 6px;
+    width: 120px;
+}
+
+
+
+.rgbColor{
+    display: flex;
+    padding: 13px;
+    border: 1px solid;
+}
+
+    
