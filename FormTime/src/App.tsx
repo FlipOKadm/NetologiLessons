@@ -1,11 +1,11 @@
+
 import './App.css'
-import FormTime from './components/FormTime'
+import { TrainingRecords } from './components/TrainingRecoeds'
 
 function App() {
-
   return (
     <>
-      <FormTime/>
+      <TrainingRecords />
     </>
   )
 }

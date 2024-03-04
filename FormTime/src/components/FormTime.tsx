@@ -1,44 +1,38 @@
-import React, { useState } from 'react';
-import fs from 'fs'
+import { useState, FormEvent, ChangeEvent, FC } from 'react';
+import { IFormData } from '../model/interface';
 
-interface IFormData {
-  date: string;
-  distance: number;
+interface IFormDataFunc{
+  onChangeData: (items: IFormData) => void
 }
 
-const FormTime: React.FC = () => {
-  const [formData, setFormData] = useState<IFormData>({ date: '', distance: 0 });
-  let data = fs.readFileSync('../data/data.json', 'utf8');
-  let parseData = JSON.parse(data);
+const FormTime: FC<IFormDataFunc> = ({onChangeData}) => {
+  const [formData, setFormData] = useState<IFormData>({ date: new Date(), distance: 0 });
 
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log(formData);
-
-    parseData.push(formData);
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();    
+    onChangeData(formData);
   };
 
-  const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, date: event.target.value });
-  };
-
-  const handleDistanceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, distance: Number(event.target.value) });
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    const updatedValue = name === 'date' ? new Date(value).toISOString().split('T')[0] : Number(value);
+    setFormData({ ...formData, [name]: updatedValue });    
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Date:</label>
-        <input type="date" value={formData.date} onChange={handleDateChange} />
-      </div>
-      <div>
-        <label>Distance (in kilometers):</label>
-        <input type="number" value={formData.distance} onChange={handleDistanceChange} />
-      </div>
-      <button type="submit">Save</button>
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Дата (ДД.ММ.ГГ)</label>
+          <input type="date" name='date' value={formData.date} onChange={handleChange} />
+        </div>
+        <div>
+          <label>Пройдено км</label>
+          <input type="number" name='distance' value={formData.distance} onChange={handleChange} />
+        </div>
+        <button type="submit">Save</button>
+      </form>
+    </>
   );
 };
 
