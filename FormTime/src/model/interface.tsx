@@ -1,19 +1,19 @@
 export interface IFormData {
-    date: Date;
+    date: string;
     distance: number;
 }
 
-
+export interface IFuncData{
+    removeItem: (date: string) => void;
+}
 export interface ITrainingRecords {
     items: Array<IFormData>
 }
 
 export interface IFormDataFunc{
-  onChangeData: (items: IFormData) => void
+  onSetData: (items: IFormData) => void
 }
 
-export interface ListItemProps {
+export interface ListItemProps extends IFuncData {
     item: IFormData;
-    removeItem: (date: Date) => void;
-    changedItem: (date: Date) => void;
 }

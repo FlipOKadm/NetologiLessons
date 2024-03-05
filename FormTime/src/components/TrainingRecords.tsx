@@ -2,9 +2,11 @@ import { Component } from "react";
 import { IFormData, ITrainingRecords } from "../model/interface";
 import FormTime from "./FormTime";
 import ListData from "./ListData";
+import { formatDate } from "../shared/function";
 
 type TrainingRecordsProps = {
-  items: ITrainingRecords;
+  items: ITrainingRecords; 
+  changedData: IFormData;
 }
 
 type TrainingRecordsState = {
@@ -12,14 +14,16 @@ type TrainingRecordsState = {
 }
 export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRecordsState>{
     public static defaultProps = {
-        items: { items: [{ date: new Date(), distance: 0}] }
+        items: { items: [{ date: formatDate(new Date()), distance: 0}] }
     };
     constructor(props: TrainingRecordsProps) {
         super(props);
-        this.state = props.items as TrainingRecordsState;
+        this.state = {
+            items: props.items.items
+        };
     }
 
-    onChange = (newTraining: IFormData)=>{
+    onSetData = (newTraining: IFormData)=>{
         
         if (!newTraining.date && !newTraining.distance) {
             return;
@@ -56,23 +60,23 @@ export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRec
         });
     } 
     
-    private removeItem = (date: Date) => {
+    private removeItem = (date: string) => {
         this.setState((prevState: ITrainingRecords) => {
             return {
                 items: prevState.items.filter((item) => item.date !== date)
             }
         })
     };
-
     
     
 
     render() {
         const { items } = this.state;
+        const { removeItem } = this;
         return (
             <>
-                <FormTime onSetData={this.onChange} onChangeData={this.onChange} />
-                <ListData items={items} removeItem={(date: Date) => {this.removeItem(date)}} changedItem={(date: Date) => {this.changedItem(date)}} />
+                <FormTime onSetData={this.onSetData} />
+                <ListData items={items} removeItem={removeItem}/>
             </>
         );
     }

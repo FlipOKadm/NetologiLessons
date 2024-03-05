@@ -1,16 +1,10 @@
-import { ITrainingRecords, IFormData } from "../model/interface";
+import {IFormData, ITrainingRecords, IFuncData } from "../model/interface";
 import ListItem from "./ListItem";
 
-interface IListDataProps {
-  items: ITrainingRecords,
-  removeItem: (date: Date) => void,
-  changedItem: (date: Date) => void
+interface ListDataProps extends ITrainingRecords, IFuncData {
 }
 
-const ListData: React.FC<IListDataProps> = ({ items, removeItem, changedItem }) => {
-  console.log("items", items);
-  
-    
+const ListData: React.FC<ListDataProps> = ({ items, removeItem}) => {    
   return(
     <table>
       <thead>
@@ -21,7 +15,7 @@ const ListData: React.FC<IListDataProps> = ({ items, removeItem, changedItem }) 
       </thead>
       <tbody>
         { items.map((item: IFormData, index: number) => (
-          <ListItem key={index} item={item} removeItem={(date: Date) => {removeItem(date)}} changedItem={(date: Date) => {changedItem(date)}} />
+          <ListItem key={index} item={item} removeItem={(date: string) => {removeItem(date)}}  />
         ))}
       </tbody>
     </table>
