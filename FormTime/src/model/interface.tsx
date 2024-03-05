@@ -5,9 +5,12 @@ export interface IFormData {
 
 
 export interface ITrainingRecords {
-    items: IFormData[]
+    items: Array<IFormData>
 }
 
+export interface IFormDataFunc{
+  onChangeData: (items: IFormData) => void
+}
 
 export interface ListItemProps {
     item: IFormData;
