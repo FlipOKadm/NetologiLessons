@@ -47,12 +47,12 @@ export class TrainingRecords extends Component{
     
     
 
-    public render() {
-        
+    render() {
+        const { items } = this.state;
         return (
             <>
                 <FormTime onChangeData={this.onChange} />
-                <ListData items={this.state} />
+                <ListData items={items} />
             </>
         );
     }

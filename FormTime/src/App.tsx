@@ -1,6 +1,6 @@
 
 import './App.css'
-import { TrainingRecords } from './components/TrainingRecoeds'
+import { TrainingRecords } from './components/TrainingRecords'
 
 function App() {
   return (
