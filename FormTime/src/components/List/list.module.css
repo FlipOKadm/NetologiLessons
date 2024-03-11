@@ -1,0 +1,22 @@
+table{
+    margin-top: 17px;
+	text-align: center;
+    border-collapse: collapse;
+}
+
+tbody {
+  box-shadow: 0 0 0 1px #000;
+  border-radius: 10px;
+}
+
+td{
+    padding: 20px 50px;
+}
+td button{
+    border: 0;
+	background: inherit;
+    cursor: pointer;
+}
+th{
+    padding-bottom: 10px;
+}

@@ -5,6 +5,7 @@ export interface IFormData {
 
 export interface IFuncData{
     removeItem: (date: string) => void;
+    changedItem: (date: string) => void;
 }
 export interface ITrainingRecords {
     items: Array<IFormData>
@@ -12,6 +13,7 @@ export interface ITrainingRecords {
 
 export interface IFormDataFunc{
   onSetData: (items: IFormData) => void
+  dataForm?: IFormData
 }
 
 export interface ListItemProps extends IFuncData {

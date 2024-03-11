@@ -1,25 +1,17 @@
 import { Component } from "react";
 import { IFormData, ITrainingRecords } from "../model/interface";
-import FormTime from "./FormTime";
-import ListData from "./ListData";
-
-type TrainingRecordsProps = {
-  items: ITrainingRecords; 
-  changedData: IFormData;
-}
+import FormTime from "./FormTime/FormTime";
+import ListData from "./List/ListData";
 
 type TrainingRecordsState = {
   items: Array<IFormData>;
+  changedData?: IFormData;
 }
-export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRecordsState>{
-    public static defaultProps = {
-        items: { items: [{ date: new Date(), distance: 0}] }
-    };
-    
-    constructor(props: TrainingRecordsProps) {
+export class TrainingRecords extends Component<ITrainingRecords, TrainingRecordsState>{    
+    constructor(props: ITrainingRecords) {
         super(props);
         this.state = {
-            items: props.items.items
+            items: [{date: new Date().toISOString().slice(0,10), distance: 0}]
         };
     }
 
@@ -67,16 +59,27 @@ export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRec
             }
         })
     };
+
+    private changedItem = (data: string) => {
+        this.setState((prevState: ITrainingRecords) => {
+            return {
+                changedData: prevState.items.filter((item) => item.date === data)[0]
+            }
+        })
+        
+    }
     
+
     
 
     render() {        
-        const { items } = this.state;
-        const { removeItem } = this;
+        const { items, changedData } = this.state;
+        const { removeItem, changedItem } = this;
+        
         return (
             <>
-                <FormTime onSetData={this.onSetData} />
-                <ListData items={items} removeItem={removeItem}/>
+                <FormTime onSetData={this.onSetData} dataForm={changedData}/>
+                <ListData items={items} removeItem={removeItem} changedItem={(data) => changedItem(data)}/>
             </>
         );
     }

@@ -1,11 +1,10 @@
-
-import './App.css'
 import { TrainingRecords } from './components/TrainingRecords'
+import './App.css'
 
 function App() {
   return (
     <>
-      <TrainingRecords />
+      <TrainingRecords items={[]} />
     </>
   )
 }
