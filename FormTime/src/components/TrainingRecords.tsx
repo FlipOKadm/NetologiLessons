@@ -2,7 +2,6 @@ import { Component } from "react";
 import { IFormData, ITrainingRecords } from "../model/interface";
 import FormTime from "./FormTime";
 import ListData from "./ListData";
-import { formatDate } from "../shared/function";
 
 type TrainingRecordsProps = {
   items: ITrainingRecords; 
@@ -14,8 +13,9 @@ type TrainingRecordsState = {
 }
 export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRecordsState>{
     public static defaultProps = {
-        items: { items: [{ date: formatDate(new Date()), distance: 0}] }
+        items: { items: [{ date: new Date(), distance: 0}] }
     };
+    
     constructor(props: TrainingRecordsProps) {
         super(props);
         this.state = {
@@ -33,8 +33,7 @@ export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRec
             let hasRecord = false;
             if (Object.keys(prevState).length !== 0){
                 
-                 temp = prevState.items.map((item) => { 
-                    console.log("date",item.date === newTraining.date);
+                 temp = prevState.items.map((item) => {
                                        
                     if (item.date === newTraining.date) {
                         
@@ -51,12 +50,13 @@ export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRec
                 return {items: [newTraining]}
             }
             
-            
-            
             return {
+                
                 items: [...temp].sort((a, b) =>
-                    new Date(a.date).getTime() - new Date(b.date).getTime())
+                    Date.parse(b.date) - Date.parse(a.date))
             };
+
+            
         });
     } 
     
@@ -70,7 +70,7 @@ export class TrainingRecords extends Component<TrainingRecordsProps, TrainingRec
     
     
 
-    render() {
+    render() {        
         const { items } = this.state;
         const { removeItem } = this;
         return (
