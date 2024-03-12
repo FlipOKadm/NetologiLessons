@@ -24,6 +24,8 @@ input{
     display: flex;
     padding: 13px;
     border: 1px solid;
+    color: #fff;
+    background-color: #1d2835;
 }
 
     
