@@ -1,11 +1,11 @@
 import { Component } from "react";
-import { IFormData, ITrainingRecords } from "../model/interface";
+import { IFormData, ITrainingRecords, IChangedData } from "../model/interface";
 import FormTime from "./FormTime/FormTime";
 import ListData from "./List/ListData";
 
 type TrainingRecordsState = {
   items: Array<IFormData>;
-  changedData?: IFormData;
+    changedData?: IChangedData;
 }
 export class TrainingRecords extends Component<ITrainingRecords, TrainingRecordsState>{    
     constructor(props: ITrainingRecords) {
@@ -16,6 +16,16 @@ export class TrainingRecords extends Component<ITrainingRecords, TrainingRecords
     }
 
     onSetData = (newTraining: IFormData)=>{
+        this.setState((prevState: ITrainingRecords) => {
+            if (prevState.changedData){
+                return {
+                    changedData: {
+                        
+                    }
+                }
+            }
+            return prevState;
+        })
         
         if (!newTraining.date && !newTraining.distance) {
             return;
