@@ -2,7 +2,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Promotions from "../Promotions/Promotions";
 import NewsBlock from "./NewsBlock/NewsBlock";
 import ExchRatesBlock from "./ExchRatesBlock/ExchRatesBlock";
-
+/**
+ * Основной блок с новостями. Разделен на два блока.
+ * 1. Новости и курс валют;
+ * 2. Реклама;
+ */
 export default function News() {
     return (
         <Col>
