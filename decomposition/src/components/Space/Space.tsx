@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import News from "../News/News";
-import Promotions from "../Promotions/Promotions";
+import Promotions from "../../shared/Promotions/Promotions";
 import Search from "../Search/Search";
 import RandomBlocksContent from "../RandomBlocksContent/RandomBlocksContent";
 

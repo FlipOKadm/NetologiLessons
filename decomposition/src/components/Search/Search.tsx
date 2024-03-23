@@ -1,4 +1,4 @@
-import Links from "../Links/Links";
+import Links from "../../shared/Links/Links";
 import FormSearchComponent from "./FormSearchComponent";
 
 /**

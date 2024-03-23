@@ -1,4 +1,4 @@
-import ExchRates from "../../ExchRates/ExchRates";
+import ExchRates from "./ExchRates/ExchRates";
 
 /**
  * 
